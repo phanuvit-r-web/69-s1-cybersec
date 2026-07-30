@@ -1,2 +1,10 @@
-
 services:
+ db:
+  image: postgres:16-alpine 
+  container_name: 69-s2-postgres
+  ports:
+    -54321:5432
+  environments:
+    -POSTGRES_PASSWOR=arm1234
+    -POSTGRES_USER=phanuvit
+    -POSTGRES_DB=phanuvit
