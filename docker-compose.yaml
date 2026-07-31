@@ -19,3 +19,4 @@ services:
       PGADMIN_DEFAULT_PASSWORD: arm123
     depends_on:
       - db
+      
