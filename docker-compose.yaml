@@ -20,8 +20,10 @@ services:
       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
     depends_on:
       - db
+    volumes:
+      - data-pgadmin:/var/lib/pgadmin
       
 volumes:
   data-postgres:
-
+  data-pgadmin:
  
